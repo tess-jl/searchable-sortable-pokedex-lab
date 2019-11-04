@@ -1,0 +1,19 @@
+.search-sort-section {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column; 
+}
+
+p {
+    margin: 0; 
+}
+
+input {
+    width: 95px;
+    border-radius: 10px;
+}
+
+button {
+    border-radius: 10px; 
+}

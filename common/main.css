@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Play&display=swap');
+
+* {
+    box-sizing: border-box; 
+}
+
+html {
+    width:100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0; 
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: rgb(255, 255, 255); 
+    border:0; 
+
+}
+
+#logo {
+    width: 1.8em; 
+    float: left; 
+}
+
+.header-section, .search-sort-section, .sort-dropdown, footer, a, .pagination-bar {
+    font-family: 'Audiowide', cursive;
+    color: darkred;
+}
+.sort-dropdown {
+    width:130px;
+}
+
+
+.pokemon-section {
+    font-family: 'Play', sans-serif; 
+    margin:0;
+    padding:0;
+}
+ul {
+    list-style-type: none;
+}
+.pokemon-list {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0; 
+    padding: 0;
+}
+
+.info-container, footer, header, nav, .search-sort-section, .pagination-bar {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.pagination-bar, header {
+    flex-direction: row; 
+    margin-bottom: 0.5em; 
+    margin-top: 0.5em; 
+}
+
+
+
