@@ -7,9 +7,10 @@ class PokemonList extends Component {
 
         const { pokemon } = this.props;
 
+        console.log(pokemon, 'pokemon');
+
         pokemon.forEach(pokemon => {
-            const props = { pokemon };
-            const pokemonItem = new PokemonItem(props);
+            const pokemonItem = new PokemonItem({ pokemon });
             const pokemonItemDOM = pokemonItem.renderDOM();
             element.appendChild(pokemonItemDOM);
         });

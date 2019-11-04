@@ -23,13 +23,23 @@ class ExploreApp extends Component {
         const pokemonList = new PokemonList({ pokemon: [] });
         pokemonSection.appendChild(pokemonList.renderDOM());
 
-        const pokemon = await getPokemon();
-        const results = pokemon.results; 
-
-        pokemonList.update({ pokemon: results });
-
         const footer = new Footer(); 
         element.append(footer.renderDOM());
+
+        async function loadPokemon() {
+            const response = await getPokemon();
+            const pokemon = response.results;
+            const totalResults = response.count;
+            pokemonList.update({ pokemon });
+            paging.update({ totalResults });
+        }
+
+        loadPokemon();
+
+        window.addEventListener('hashchange', () => {
+            loadPokemon();
+        });
+
     }
 
     renderHTML() {
