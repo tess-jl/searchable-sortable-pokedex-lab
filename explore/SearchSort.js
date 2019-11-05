@@ -4,7 +4,7 @@ class SearchSort extends Component {
 
     onRender(form) {
         const searchInput = form.querySelector('input[name=search]');
-        const typeDropdown = form.querySelectorAll('option[name=sort]');
+        // const typeDropdown = form.querySelectorAll('option[name=sort]');
 
         function updateControls() {
             const queryString = window.location.hash.slice(1);
