@@ -3,6 +3,10 @@ header {
     border-bottom: 1px solid gray;
 }
 
+h1 {
+    font-size: 3em; 
+}
+
 header nav {
     grid-area: navigation;
     display: flex;
@@ -13,9 +17,14 @@ header nav {
 
 .logo {
     width: 1.8em;
+
 }
 
-header nav a {
+a {
+    margin-left: 10px;
+}
+
+header  {
     display: block;
     width: 100%;
     background: white;
@@ -48,7 +57,7 @@ header nav a {
 header section {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     grid-area: header;
     font-family: 'Audiowide', cursive;
     color: darkred;

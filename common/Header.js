@@ -7,10 +7,13 @@ class Header extends Component {
                 <section>
                     <img class="logo" src="../assets/logo.jpg" alt="Pokedex logo">
                     <h1>Pokedex</h1>
+                    <img class="logo" src="../assets/logo.jpg" alt="Pokedex logo">
                 </section>
                 <nav>
-                    <a href="./">Home</a>
-                    <a href="explore.html">Explore</a>
+                    <div>
+                        <a href="./">Home</a>
+                        <a href="explore.html">Explore</a>
+                    </div>
                 </nav>
             </header>
         `;
