@@ -1,0 +1,23 @@
+.pokemon-item img {
+    height: 100%;
+    margin: auto;
+}
+
+.pokemon-item {
+    height: 200px;
+    border: 1px solid #aaa;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 15% 60% 8%;
+    text-align: center;
+    color: darkred;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 0; 
+}
+
+.pokemon-item p {
+    font-size: .8em; 
+}

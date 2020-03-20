@@ -1,0 +1,41 @@
+header {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+h1 {
+    font-size: 3em; 
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 1.8em;
+
+}
+
+a {
+    margin-left: 10px;
+}
+
+header  {
+    display: block;
+    width: 100%;
+    background: white;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Audiowide', cursive;
+    color: darkred;
+}
